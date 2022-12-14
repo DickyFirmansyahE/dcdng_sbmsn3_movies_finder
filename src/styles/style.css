@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #000000;
+  background-image: url("background.png");
+  background-size: 2000px 2000px;
+  background-position: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+}
+
+main {
+  width: 75%;
+  margin: 32px auto;
+}
+
+.tags {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+movie-list {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  padding: 16px;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+@media screen and (max-width: 1080px){
+  main {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 826px){
+  main {
+    width:90%;
+  }
+}
+
+@media screen and (max-width: 497px){
+  .tags {
+    flex-direction: column;
+  }
+}
+
